@@ -6,6 +6,10 @@ SSH brute-force detection in Splunk using Linux sshd logs. This lab creates a si
 
 This lab implements a custom detection in Splunk to identify successful SSH brute-force attacks against a Linux host using `linux_secure` sshd logs. The SPL parses authentication events, classifies failed and successful logins, and flags source IPs that generate multiple failed password attempts followed by at least one successful login.
 
+## Detection
+
+- **SSH brute-force with success** – flags any source IP that generates multiple failed SSH password attempts followed by at least one successful login using `linux_secure` sshd logs.
+
 ## Detection SPL
 
 ```spl
