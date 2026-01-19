@@ -20,3 +20,7 @@ index=main sourcetype=linux_secure process=sshd ("Failed password for" OR "Accep
   BY src
 | where failed_count>=3 AND success_count>=1
 ```
+## Screenshots
+
+![SSH brute-force events](screenshots/Screenshot_2026-01-19_10-51-17.png)
+![Detection statistics](screenshots/Screenshot_2026-01-19_10-55-25.png)
